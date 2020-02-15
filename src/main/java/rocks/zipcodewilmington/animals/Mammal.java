@@ -45,6 +45,9 @@ public abstract class Mammal implements Animal {
     public void eat(Food food) {
         eatenMeals.add(food);
     }
+    public Food getFood(){
+        return eatenMeals.get(eatenMeals.size() - 1);
+    }
 
     @Override
     public Integer getId() {

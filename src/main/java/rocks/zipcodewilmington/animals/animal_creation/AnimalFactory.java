@@ -13,6 +13,10 @@ import java.util.Date;
  * This class is responsible for creating animals and automatically assigning them an id
  */
 public class AnimalFactory {
+    String name;
+    int Id;
+
+
     public static Dog createDog(String name, Date birthDate) {
         Integer newId = DogHouse.getNumberOfDogs();
         return new Dog(name, birthDate, newId);
